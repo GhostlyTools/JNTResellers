@@ -1,0 +1,138 @@
+[
+  {
+    "id": "iphone16promax",
+    "title": "Apple iPhone 16 Pro Max",
+    "category": "Phones",
+    "price": 1499.00,
+    "image": "https://via.placeholder.com/600x400?text=iPhone+16+Pro+Max",
+    "externalLink": "https://m.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/1047860153.html"
+  },
+  {
+    "id": "galaxys25ultra",
+    "title": "Samsung Galaxy S25 Ultra",
+    "category": "Phones",
+    "price": 1499.00,
+    "image": "https://via.placeholder.com/600x400?text=Galaxy+S25+Ultra",
+    "externalLink": "https://m.dhgate.com/product/6-8-inchs-5g-s23-ultra-cell-phones-unlock/888186188.html"
+  },
+  {
+    "id": "galaxytab_s10_s9",
+    "title": "Samsung Galaxy Tab S10+ / S9",
+    "category": "Tablets",
+    "price": 1099.00,
+    "image": "https://via.placeholder.com/600x400?text=Galaxy+Tab+S10%2B",
+    "externalLink": "https://www.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/1047860153.html?irclickid=wJuQiFWosxycTATXPIVQP1WRUkpymk1bhw-M1Q0&irgwc=1&f=bm%7Caff%7Cimpact%7C4653991%7CwJuQiFWosxycTATXPIVQP1WRUkpymk1bhw-M1Q0%7C"
+  },
+  {
+    "id": "ipadpro_m4",
+    "title": "Apple iPad Pro M4",
+    "category": "Tablets",
+    "price": 1299.00,
+    "image": "https://via.placeholder.com/600x400?text=iPad+Pro+M4",
+    "externalLink": "https://sale.dhgate.com/gqfDan35"
+  },
+  {
+    "id": "beats_studio_pro",
+    "title": "Beats Studio Pro",
+    "category": "Headphones",
+    "price": 349.00,
+    "image": "https://via.placeholder.com/600x400?text=Beats+Studio+Pro",
+    "externalLink": "https://m.dhgate.com/product/headphones-3-bluetooth-headphones-wireless/1047461005.html"
+  },
+  {
+    "id": "airpods_pro_max",
+    "title": "Apple AirPods Pro Max",
+    "category": "Headphones",
+    "price": 549.00,
+    "image": "https://via.placeholder.com/600x400?text=AirPods+Pro+Max",
+    "externalLink": "https://sale.dhgate.com/KL78bT33"
+  },
+  {
+    "id": "sony_wh1000xm5",
+    "title": "Sony WH-1000XM5",
+    "category": "Headphones",
+    "price": 399.00,
+    "image": "https://via.placeholder.com/600x400?text=Sony+WH-1000XM5",
+    "externalLink": "https://sale.dhgate.com/aINV5q35"
+  },
+  {
+    "id": "rolex_datejust_41",
+    "title": "Rolex Datejust 41",
+    "category": "Watches",
+    "price": 14000.00,
+    "image": "https://via.placeholder.com/600x400?text=Rolex+Datejust+41",
+    "externalLink": "https://sale.dhgate.com/9HPVMD11"
+  },
+  {
+    "id": "rolex_submariner_hulk",
+    "title": "Rolex Submariner Hulk",
+    "category": "Watches",
+    "price": 22000.00,
+    "image": "https://via.placeholder.com/600x400?text=Rolex+Submariner+Hulk",
+    "externalLink": "https://m.dhgate.com/product/watch-men-s-watch-mechanical-ceramic-watch/972471996.html"
+  },
+  {
+    "id": "richard_mille",
+    "title": "RICHARD MILLE",
+    "category": "Watches",
+    "price": 290000.00,
+    "image": "https://via.placeholder.com/600x400?text=RICHARD+MILLE",
+    "externalLink": "https://sale.dhgate.com/L3uPfI80"
+  },
+  {
+    "id": "richard_mille_iced",
+    "title": "Iced Out RICHARD MILLE",
+    "category": "Watches",
+    "price": 320000.00,
+    "image": "https://via.placeholder.com/600x400?text=Iced+Out+RICHARD+MILLE",
+    "externalLink": "https://sale.dhgate.com/JDMIty52"
+  },
+  {
+    "id": "g_shock",
+    "title": "G-Shock",
+    "category": "Watches",
+    "price": 150.00,
+    "image": "https://via.placeholder.com/600x400?text=G-Shock",
+    "externalLink": "https://m.dhgate.com/product/new-fashion-mens-watches-g-analog-digital/598642391.html"
+  },
+  {
+    "id": "cologne_sample",
+    "title": "Popular Cologne (100ml)",
+    "category": "Cologne",
+    "price": 59.99,
+    "image": "https://via.placeholder.com/600x400?text=Cologne",
+    "externalLink": "https://sale.dhgate.com/AaKE0x18"
+  },
+  {
+    "id": "nike_1",
+    "title": "Nike — Style 1",
+    "category": "Shoes",
+    "price": 79.99,
+    "image": "https://via.placeholder.com/600x400?text=Nike+1",
+    "externalLink": "https://sale.dhgate.com/FsdBna70"
+  },
+  {
+    "id": "nike_2",
+    "title": "Nike — Style 2",
+    "category": "Shoes",
+    "price": 69.99,
+    "image": "https://via.placeholder.com/600x400?text=Nike+2",
+    "externalLink": "https://sale.dhgate.com/UBR75P45"
+  },
+  {
+    "id": "nike_3",
+    "title": "Nike — Style 3",
+    "category": "Shoes",
+    "price": 64.99,
+    "image": "https://via.placeholder.com/600x400?text=Nike+3",
+    "externalLink": "https://sale.dhgate.com/sTlUyE91"
+  },
+  {
+    "id": "galaxys9",
+    "title": "Samsung Galaxy S9",
+    "category": "Phones",
+    "price": 249.00,
+    "image": "https://via.placeholder.com/600x400?text=Galaxy+S9",
+    "externalLink": "https://sale.dhgate.com/gm2qwU89"
+  }
+]
