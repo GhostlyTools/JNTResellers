@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shop — Ghostly Resell</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Ghostly Resell</div>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="checkout.html">Order Request</a>
+    </nav>
+    <input id="siteSearch" class="site-search" placeholder="Search products...">
+  </header>
+
+  <main class="catalog">
+    <aside class="filters">
+      <h3>Categories</h3>
+      <select id="categoryFilter">
+        <option value="">All</option>
+      </select>
+
+      <h3>Max price</h3>
+      <input id="priceFilter" type="range" min="0" max="400000" step="1" value="400000">
+      <div>Up to $<span id="priceValue">400000</span></div>
+      <button id="clearFilters">Clear</button>
+    </aside>
+
+    <section class="products">
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
