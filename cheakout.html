@@ -1,28 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout | Ghostly Resell</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout — Ghostly Resell</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Checkout</h1>
-  <div id="checkout-item"></div>
+  <header class="topbar">
+    <div class="brand">Ghostly Resell</div>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+    </nav>
+  </header>
 
-  <button id="autoPurchaseBtn">Confirm Purchase</button>
+  <main class="checkout">
+    <h1>Order Request</h1>
 
-  <script>
-    const item = JSON.parse(localStorage.getItem('cartItem'));
-    if (item) {
-      document.getElementById('checkout-item').innerHTML =
-        `<h2>${item.item}</h2><p>Price: $${item.price}</p>`;
-    }
+    <div id="cartContents"></div>
 
-    document.getElementById('autoPurchaseBtn').addEventListener('click', () => {
-      alert(`Auto-purchasing ${item.item}...`);
-      window.location.href = 'success.html';
-    });
-  </script>
+    <form id="orderRequestForm" method="POST" action="https://formsubmit.co/jnrrellercheckout@gmail.com">
+      <!-- Hidden inputs are filled by app.js before submit -->
+      <input type="hidden" name="_subject" value="New Order Request from Ghostly Resell">
+      <input type="hidden" name="_next" value="./success.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label>
+        Full name
+        <input name="customer_name" required placeholder="Full name">
+      </label>
+
+      <label>
+        Email
+        <input name="customer_email" type="email" required placeholder="Email">
+      </label>
+
+      <label>
+        Phone (optional)
+        <input name="customer_phone" placeholder="Phone number">
+      </label>
+
+      <label>
+        Shipping address
+        <input name="customer_address" required placeholder="Shipping address">
+      </label>
+
+      <label>
+        Order notes (optional)
+        <textarea name="customer_notes" placeholder="Any notes for your order"></textarea>
+      </label>
+
+      <!-- order_summary (hidden) will contain product titles, qty, links -->
+      <input type="hidden" name="order_summary" id="order_summary">
+
+      <button type="submit" class="cta">Submit Order Request</button>
+    </form>
+  </main>
+
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
