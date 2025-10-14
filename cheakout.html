@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Ghostly Resell</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1>Checkout</h1>
+  <div id="checkout-item"></div>
+
+  <button id="autoPurchaseBtn">Confirm Purchase</button>
+
+  <script>
+    const item = JSON.parse(localStorage.getItem('cartItem'));
+    if (item) {
+      document.getElementById('checkout-item').innerHTML =
+        `<h2>${item.item}</h2><p>Price: $${item.price}</p>`;
+    }
+
+    document.getElementById('autoPurchaseBtn').addEventListener('click', () => {
+      alert(`Auto-purchasing ${item.item}...`);
+      window.location.href = 'success.html';
+    });
+  </script>
+</body>
+</html>
