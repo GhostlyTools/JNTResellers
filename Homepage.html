@@ -1,251 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Ghostly Resell | Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JNTResellers | Homepage</title>
 <style>
-  body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; }
-  header { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000; padding:15px 20px; text-align:center; }
-  header nav a { margin:0 10px; text-decoration:none; font-weight:bold; color:#000; }
-  header nav a:hover { text-decoration: underline; }
-  .hero { background:#00ff00; color:#000; text-align:center; padding:36px 12px; }
-  .product-section { padding:32px 16px; }
-  .product-section h2 { margin-bottom:18px; color:#000; }
-  .product-grid { display:flex; flex-wrap:wrap; gap:18px; justify-content:center; }
-  .product { background:#fff; border:1px solid #ddd; border-radius:8px; padding:12px; text-align:center; width:220px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
-  .product img { width:100%; border-radius:6px; margin-bottom:10px; height:160px; object-fit:cover; background:#eee; }
-  .price { font-weight:700; margin:6px 0; }
-  .checkbox { margin-top:8px; }
-  #order-form { background:#ff0000; color:#fff; padding:32px 16px; }
-  #order-form form { max-width:640px; margin:0 auto; display:flex; flex-direction:column; gap:8px; }
-  #order-form input, #order-form textarea { padding:10px; border-radius:6px; border: none; }
-  #order-form button { background:#ffff00; color:#000; padding:12px; border:none; border-radius:6px; cursor:pointer; font-weight:700; }
-  footer { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000; text-align:center; padding:14px; margin-top:20px; }
-  @media (max-width:760px){
-    .product { width:calc(50% - 28px); }
-  }
-  @media (max-width:480px){
-    .product { width:calc(100% - 28px); }
-    header nav { display:block; padding-top:8px; }
-  }
+body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; }
+header { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000; padding:15px 20px; text-align:center; }
+header nav a { margin:0 10px; text-decoration:none; font-weight:bold; color:#000; }
+header nav a:hover { text-decoration: underline; }
+.hero { background:#00ff00; color:#000; text-align:center; padding:36px 12px; }
+.product-section { padding:32px 16px; }
+.product-section h2 { margin-bottom:18px; color:#000; }
+.product-grid { display:flex; flex-wrap:wrap; gap:18px; justify-content:center; }
+.product { background:#fff; border:1px solid #ddd; border-radius:8px; padding:12px; text-align:center; width:220px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+.product img { width:100%; border-radius:6px; margin-bottom:10px; height:160px; object-fit:cover; background:#eee; }
+.price { font-weight:700; margin:6px 0; }
+.checkbox { margin-top:8px; }
+#order-form { background:#ff0000; color:#fff; padding:32px 16px; }
+#order-form form { max-width:640px; margin:0 auto; display:flex; flex-direction:column; gap:8px; }
+#order-form input, #order-form textarea { padding:10px; border-radius:6px; border: none; }
+#order-form button { background:#ffff00; color:#000; padding:12px; border:none; border-radius:6px; cursor:pointer; font-weight:700; }
+footer { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000; text-align:center; padding:14px; margin-top:20px; }
+@media (max-width:760px){ .product { width:calc(50% - 28px); } }
+@media (max-width:480px){ .product { width:calc(100% - 28px); } header nav { display:block; padding-top:8px; } }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>🛍️ Ghostly Resell</h1>
-  <nav>
-    <a href="#watches">Watches</a>
-    <a href="#phones">Phones</a>
-    <a href="#tablets">Tablets</a>
-    <a href="#headphones">Headphones</a>
-    <a href="#shoes">Shoes</a>
-    <a href="#cologne">Cologne</a>
-    <a href="#order-form">Order Request</a>
-  </nav>
+<h1>🛍️ JNTResellers</h1>
+<nav>
+  <a href="#watches">Watches</a>
+  <a href="#phones">Phones</a>
+  <a href="#tablets">Tablets</a>
+  <a href="#headphones">Headphones</a>
+  <a href="#shoes">Shoes</a>
+  <a href="#cologne">Cologne</a>
+  <a href="#order-form">Order Request</a>
+</nav>
 </header>
 
 <section class="hero">
-  <h2>Buy & Resell Premium Goods Instantly</h2>
-  <p>Watches • Phones • Tablets • Headphones • Shoes • Cologne</p>
+<h2>Buy & Resell Premium Goods Instantly</h2>
+<p>Watches • Phones • Tablets • Headphones • Shoes • Cologne</p>
 </section>
 
-<!-- WATCHES -->
+<!-- TEMPLATE FOR PRODUCTS -->
 <section id="watches" class="product-section">
-  <h2>Watches</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=G+Shock" alt="G Shock">
-      <h3>G Shock</h3>
-      <div class="price">$150</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="G Shock"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Iced+Out+RICHARD+MILLE" alt="Iced Out RICHARD MILLE">
-      <h3>Iced Out RICHARD MILLE</h3>
-      <div class="price">$12,000</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Iced Out RICHARD MILLE"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=RICHARD+MILLE" alt="RICHARD MILLE">
-      <h3>RICHARD MILLE</h3>
-      <div class="price">$10,000</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="RICHARD MILLE"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Rolex+Submariner+Hulk" alt="Rolex Submariner Hulk">
-      <h3>Rolex Submariner Hulk</h3>
-      <div class="price">$12,500</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Rolex Submariner Hulk"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Rolex+Datejust+41" alt="Rolex Datejust 41">
-      <h3>Rolex Datejust 41</h3>
-      <div class="price">$8,500</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Rolex Datejust 41"> Add to Order</label></div>
-    </div>
+<h2>Watches</h2>
+<div class="product-grid">
+  <!-- Product example: swap src="" to your image URL -->
+  <div class="product">
+    <img src="images/gshock.jpg" alt="G Shock">
+    <h3>G Shock</h3>
+    <div class="price">$150</div>
+    <div class="checkbox"><label><input type="checkbox" name="products" value="G Shock"> Add to Order</label></div>
   </div>
+
+  <div class="product">
+    <img src="images/rm_iced.jpg" alt="Iced Out RICHARD MILLE">
+    <h3>Iced Out RICHARD MILLE</h3>
+    <div class="price">$12,000</div>
+    <div class="checkbox"><label><input type="checkbox" name="products" value="Iced Out RICHARD MILLE"> Add to Order</label></div>
+  </div>
+
+  <!-- Copy this div for each product and replace name, price, and src -->
+</div>
 </section>
 
-<!-- PHONES -->
-<section id="phones" class="product-section">
-  <h2>Phones</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=iPhone+16+Pro+Max" alt="iPhone 16 Pro Max">
-      <h3>iPhone 16 Pro Max</h3>
-      <div class="price">$1,499</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="iPhone 16 Pro Max"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Galaxy+S25+Ultra" alt="Galaxy S25 Ultra">
-      <h3>Galaxy S25 Ultra</h3>
-      <div class="price">$1,300</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Galaxy S25 Ultra"> Add to Order</label></div>
-    </div>
-  </div>
-</section>
-
-<!-- TABLETS -->
-<section id="tablets" class="product-section">
-  <h2>Tablets</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Apple+iPad+Pro+M4" alt="Apple iPad Pro M4">
-      <h3>Apple iPad Pro M4</h3>
-      <div class="price">$1,299</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Apple iPad Pro M4"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Galaxy+Tab+S10%2B+%26+S9" alt="Samsung Galaxy Tab S10+ & S9">
-      <h3>Samsung Galaxy Tab S10+ & S9</h3>
-      <div class="price">$1,099</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Samsung Galaxy Tab S10+ & S9"> Add to Order</label></div>
-    </div>
-  </div>
-</section>
-
-<!-- HEADPHONES -->
-<section id="headphones" class="product-section">
-  <h2>Headphones</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Sony+WH-1000XM5" alt="Sony WH-1000XM5">
-      <h3>Sony WH-1000XM5</h3>
-      <div class="price">$399</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Sony WH-1000XM5"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=AirPods+Pro+Max" alt="AirPods Pro Max">
-      <h3>AirPods Pro Max</h3>
-      <div class="price">$549</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="AirPods Pro Max"> Add to Order</label></div>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Beats+Studio+Pro" alt="Beats Studio Pro">
-      <h3>Beats Studio Pro</h3>
-      <div class="price">$349</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Beats Studio Pro"> Add to Order</label></div>
-    </div>
-  </div>
-</section>
-
-<!-- SHOES -->
-<section id="shoes" class="product-section">
-  <h2>Shoes</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Nike+Style+1" alt="Nikes">
-      <h3>Nike — Style 1</h3>
-      <div class="price">$79.99</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Nike — Style 1"> Add to Order</label></div>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Nike+Style+2" alt="Nike">
-      <h3>Nike — Style 2</h3>
-      <div class="price">$69.99</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Nike — Style 2"> Add to Order</label></div>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Nike+Style+3" alt="Nike">
-      <h3>Nike — Style 3</h3>
-      <div class="price">$64.99</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Nike — Style 3"> Add to Order</label></div>
-    </div>
-  </div>
-</section>
-
-<!-- COLOGNE -->
-<section id="cologne" class="product-section">
-  <h2>Cologne</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/400x300?text=Popular+Cologne" alt="Cologne">
-      <h3>Popular Cologne (100ml)</h3>
-      <div class="price">$59.99</div>
-      <div class="checkbox"><label><input type="checkbox" name="products" value="Popular Cologne (100ml)"> Add to Order</label></div>
-    </div>
-  </div>
-</section>
+<!-- Repeat for other categories: Phones, Tablets, Headphones, Shoes, Cologne -->
 
 <!-- ORDER FORM -->
 <section id="order-form">
-  <h2 style="text-align:center; padding-top:18px;">Order Request</h2>
-  <div id="order-form-inner" style="max-width:760px;margin:0 auto;padding:18px;">
-    <!-- Form posts to Formspree — confirm forwarding email in Formspree UI first -->
-    <form id="orderForm" action="https://formspree.io/f/mzzpnlyo" method="POST">
-      <input type="hidden" name="_subject" value="New Order Request — Ghostly Resell">
-      <input type="hidden" name="_next" value="./success.html">
-      <label><strong>Name</strong><br><input type="text" name="name" required></label>
-      <label><strong>Email</strong><br><input type="email" name="email" required></label>
-      <label><strong>Selected products</strong><br>
-        <textarea id="selectedProducts" name="products" rows="4" readonly placeholder="Select items above (they will appear here)"></textarea>
-      </label>
-      <label><strong>Notes / Shipping address</strong><br><textarea name="notes" rows="4" placeholder="Any notes or shipping details"></textarea></label>
-      <div style="text-align:center; margin-top:12px;">
-        <button type="submit" style="background:#ffff00;color:#000;padding:12px 18px;border-radius:8px;border:none;font-weight:700;cursor:pointer;">Send Order Request</button>
-      </div>
-    </form>
+<h2 style="text-align:center;">Order Request</h2>
+<form id="orderForm" action="https://formspree.io/f/mzzpnlyo" method="POST">
+  <input type="hidden" name="_subject" value="New Order Request — JNTResellers">
+  <input type="hidden" name="_next" value="./success.html">
+  <label><strong>Name</strong><br><input type="text" name="name" required></label>
+  <label><strong>Email</strong><br><input type="email" name="email" required></label>
+  <label><strong>Selected products</strong><br>
+    <textarea id="selectedProducts" name="products" rows="4" readonly placeholder="Select items above (they will appear here)"></textarea>
+  </label>
+  <label><strong>Notes / Shipping address</strong><br><textarea name="notes" rows="4" placeholder="Any notes or shipping details"></textarea></label>
+  <div style="text-align:center; margin-top:12px;">
+    <button type="submit">Send Order Request</button>
   </div>
+</form>
 </section>
 
 <footer>
-  <p>© 2025 Ghostly Resell • Order requests sent to jnrrellercheckout@gmail.com</p>
+<p>© 2025 JNTResellers • Order requests sent to jnrrellercheckout@gmail.com</p>
 </footer>
 
 <script>
-  // Gather checked products and place them into the textarea before submit
-  (function(){
-    const form = document.getElementById('orderForm');
-    const productCheckboxes = Array.from(document.querySelectorAll('input[name="products"]'));
-    const selectedProductsArea = document.getElementById('selectedProducts');
+(function(){
+  const form = document.getElementById('orderForm');
+  const productCheckboxes = Array.from(document.querySelectorAll('input[name="products"]'));
+  const selectedProductsArea = document.getElementById('selectedProducts');
 
-    function updateSelectedArea(){
-      const selected = productCheckboxes.filter(cb => cb.checked).map(cb => cb.value);
-      selectedProductsArea.value = selected.length ? selected.join('\\n') : '';
+  function updateSelectedArea(){
+    const selected = productCheckboxes.filter(cb => cb.checked).map(cb => cb.value);
+    selectedProductsArea.value = selected.length ? selected.join('\n') : '';
+  }
+
+  productCheckboxes.forEach(cb => cb.addEventListener('change', updateSelectedArea));
+  form.addEventListener('submit', function(e){
+    updateSelectedArea();
+    if(!selectedProductsArea.value.trim()){
+      e.preventDefault();
+      alert('Please select at least one product before submitting your order request.');
+      return false;
     }
-
-    productCheckboxes.forEach(cb => cb.addEventListener('change', updateSelectedArea));
-    form.addEventListener('submit', function(e){
-      updateSelectedArea();
-      // If no products selected, block submission and prompt user
-      if(!selectedProductsArea.value.trim()){
-        e.preventDefault();
-        alert('Please select at least one product before submitting your order request.');
-        return false;
-      }
-      // allow form to submit to Formspree
-    });
-  })();
+  });
+})();
 </script>
 
 </body>
