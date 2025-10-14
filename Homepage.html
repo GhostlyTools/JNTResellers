@@ -1,29 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghostly Resell | Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resellr — Shop</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>👟 Ghostly Resell</h1>
-    <nav>
-      <a href="homepage.html">Home</a>
-      <a href="products.html">Shop</a>
-      <a href="checkout.html">Checkout</a>
-    </nav>
+  <!-- Top bar (mini links) -->
+  <div class="topbar">
+    <div class="container">
+      <div class="top-left">Sell • Orders • Help</div>
+      <div class="top-right">Deliver to United States</div>
+    </div>
+  </div>
+
+  <!-- Header: logo, big search, account/cart -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Resellr</a>
+
+      <div class="search-wrap">
+        <select id="categorySelect" aria-label="Category">
+          <option value="">All</option>
+        </select>
+        <input id="searchInput" type="search" placeholder="Search for shoes, watches, phones, tablets, headphones, cologne..." aria-label="Search">
+        <button id="searchBtn" aria-label="Search">Search</button>
+      </div>
+
+      <nav class="account-cart">
+        <div class="account">Hello, Sign in<br/><strong>Account & Lists</strong></div>
+        <div class="orders">Returns<br/><strong>& Orders</strong></div>
+        <div class="cart">🛒<span id="cartCount">0</span><br/><strong>Cart</strong></div>
+      </nav>
+    </div>
+
+    <!-- category nav (thin) -->
+    <div class="container cat-nav">
+      <nav>
+        <a href="#" data-cat="">All</a>
+        <a href="#" data-cat="Shoes">Shoes</a>
+        <a href="#" data-cat="Watches">Watches</a>
+        <a href="#" data-cat="Phones">Phones</a>
+        <a href="#" data-cat="Tablets">Tablets</a>
+        <a href="#" data-cat="Headphones">Headphones</a>
+        <a href="#" data-cat="Cologne">Cologne</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Buy & Resell Premium Goods Instantly</h2>
-    <p>Shoes • Watches • Phones • Tablets • Headphones • Cologne</p>
-    <a href="products.html" class="btn">Shop Now</a>
-  </section>
+  <main class="container main-grid">
+    <!-- Left filters -->
+    <aside class="filters">
+      <h3>Filters</h3>
 
-  <footer>
-    <p>© 2025 Ghostly Resell | Built for GitHub Pages</p>
-  </footer>
+      <div class="filter-section">
+        <label>Price</label>
+        <input id="priceMax" type="range" min="0" max="2000" value="2000">
+        <div class="small">Max: $<span id="priceMaxVal">2000</span></div>
+      </div>
+
+      <div class="filter-section">
+        <label>Condition</label>
+        <select id="conditionFilter">
+          <option value="">Any</option>
+          <option value="New">New</option>
+          <option value="Refurbished">Refurbished</option>
+        </select>
+      </div>
+
+      <div class="filter-section">
+        <label>Rating</label>
+        <select id="ratingFilter">
+          <option value="0">Any</option>
+          <option value="4">4★ & up</option>
+          <option value="3">3★ & up</option>
+        </select>
+      </div>
+
+      <button id="clearFilters" class="btn-ghost">Clear filters</button>
+    </aside>
+
+    <!-- Products -->
+    <section class="products">
+      <div class="breadcrumb">Home › <span id="breadcrumbCat">All</span></div>
+
+      <div class="toolbar">
+        <div id="resultsCount">0 results</div>
+        <div>
+          Sort by:
+          <select id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="productGrid" class="product-grid" aria-live="polite"></div>
+
+      <div class="pagination">
+        <button id="prevPage" class="btn-ghost">‹ Prev</button>
+        <span id="pageInfo">Page 1</span>
+        <button id="nextPage" class="btn-ghost">Next ›</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple cart modal -->
+  <div id="cartModal" class="cart-modal hidden" aria-hidden="true">
+    <div class="cart-body container">
+      <button id="closeCart" class="close">✕</button>
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-foot">
+        <div>Total: $<span id="cartTotal">0.00</span></div>
+        <button id="checkoutBtn" class="btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
