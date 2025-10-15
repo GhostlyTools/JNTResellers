@@ -1,16 +1,16 @@
-[
-  {"category":"Watches","name":"G Shock WR20BAR","link":"https://m.dhgate.com/product/new-fashion-mens-watches-g-analog-digital/598642391.html","image":"images/gshock.jpg"},
-  {"category":"Watches","name":"Richard Mille","link":"https://sale.dhgate.com/L3uPfI80","image":"images/richardmille.jpg"},
-  {"category":"Watches","name":"Iced Out Richard Mille","link":"https://sale.dhgate.com/JDMIty52","image":"images/iced_richardmille.jpg"},
-  {"category":"Watches","name":"Rolex Submariner Hulk","link":"https://m.dhgate.com/product/watch-men-s-watch-mechanical-ceramic-watch/972471996.html","image":"images/rolex_hulk.jpg"},
-  {"category":"Watches","name":"Rolex Datejust 41","link":"https://sale.dhgate.com/9HPVMD11","image":"images/rolex_datejust.jpg"},
-  {"category":"Phones","name":"iPhone 16 Pro Max","link":"https://m.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/1047860153.html","image":"images/iphone16promax.jpg"},
-  {"category":"Phones","name":"Galaxy S25 Ultra","link":"https://m.dhgate.com/product/6-8-inchs-5g-s23-ultra-cell-phones-unlock/888186188.html","image":"images/galaxys25ultra.jpg"},
-  {"category":"Tablets","name":"Apple iPad Pro M4","link":"https://sale.dhgate.com/gqfDan35","image":"images/ipadpro.jpg"},
-  {"category":"Tablets","name":"Samsung Galaxy Tab S10+ / S9","link":"https://www.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/1047860153.html","image":"images/galaxytabs10.jpg"},
-  {"category":"Headphones","name":"Sony WH-1000XM5","link":"https://sale.dhgate.com/aINV5q35","image":"images/sony_wh1000xm5.jpg"},
-  {"category":"Headphones","name":"AirPods Pro Max","link":"https://sale.dhgate.com/KL78bT33","image":"images/airpods_pro_max.jpg"},
-  {"category":"Headphones","name":"Beats Studio Pro","link":"https://m.dhgate.com/product/headphones-3-bluetooth-headphones-wireless/1047461005.html","image":"images/beats_studio_pro.jpg"},
-  {"category":"Shoes","name":"Nike Shoes","link":"https://sale.dhgate.com/FsdBna70","image":"images/nike_shoes.jpg","quote":"Custom Quote"},
-  {"category":"Cologne","name":"Cologne","link":"https://sale.dhgate.com/AaKE0x18","image":"images/cologne.jpg"}
-]
+const products = [
+  {"category":"Watches","name":"G Shock WR20BAR","link":"https://m.dhgate.com/product/new-fashion-mens-watches-g-analog-digital/598642391.html","image":"https://upload.wikimedia.org/wikipedia/commons/3/39/G-Shock_Classic.jpg"},
+  {"category":"Watches","name":"Richard Mille","link":"https://sale.dhgate.com/L3uPfI80","image":"https://upload.wikimedia.org/wikipedia/commons/5/57/Richard_Mille_RM011.jpg"},
+  {"category":"Watches","name":"Iced Out Richard Mille","link":"https://sale.dhgate.com/JDMIty52","image":"https://upload.wikimedia.org/wikipedia/commons/1/1f/Richard_Mille_Iced.jpg"},
+  {"category":"Watches","name":"Rolex Submariner Hulk","link":"https://m.dhgate.com/product/watch-men-s-watch-mechanical-ceramic-watch/972471996.html","image":"https://upload.wikimedia.org/wikipedia/commons/5/5e/Rolex_Submariner_116610LV.jpg"},
+  {"category":"Watches","name":"Rolex Datejust 41","link":"https://sale.dhgate.com/9HPVMD11","image":"https://upload.wikimedia.org/wikipedia/commons/f/fd/Rolex_Datejust_41.jpg"},
+  {"category":"Phones","name":"iPhone 16 Pro Max","link":"https://m.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/1047860153.html","image":"https://upload.wikimedia.org/wikipedia/commons/3/3e/IPhone_14_Pro_Max.png"},
+  {"category":"Phones","name":"Galaxy S25 Ultra","link":"https://m.dhgate.com/product/6-8-inchs-5g-s23-ultra-cell-phones-unlock/888186188.html","image":"https://upload.wikimedia.org/wikipedia/commons/e/e1/Samsung_Galaxy_S23_Ultra.jpg"},
+  {"category":"Tablets","name":"Apple iPad Pro M4","link":"https://sale.dhgate.com/gqfDan35","image":"https://upload.wikimedia.org/wikipedia/commons/5/5e/IPad_Pro_M1.jpg"},
+  {"category":"Tablets","name":"Samsung Galaxy Tab S10+ / S9","link":"https://www.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/1047860153.html","image":"https://upload.wikimedia.org/wikipedia/commons/3/3c/Samsung_Galaxy_Tab_S7.jpg"},
+  {"category":"Headphones","name":"Sony WH-1000XM5","link":"https://sale.dhgate.com/aINV5q35","image":"https://upload.wikimedia.org/wikipedia/commons/2/25/Sony_WH1000XM4.jpg"},
+  {"category":"Headphones","name":"AirPods Pro Max","link":"https://sale.dhgate.com/KL78bT33","image":"https://upload.wikimedia.org/wikipedia/commons/2/2f/AirPods_Max_Silver.jpg"},
+  {"category":"Headphones","name":"Beats Studio Pro","link":"https://m.dhgate.com/product/headphones-3-bluetooth-headphones-wireless/1047461005.html","image":"https://upload.wikimedia.org/wikipedia/commons/8/8d/Beats_Studio3.jpg"},
+  {"category":"Shoes","name":"Nike Shoes","link":"https://sale.dhgate.com/FsdBna70","image":"https://upload.wikimedia.org/wikipedia/commons/8/82/Nike_Air_Max_90.jpg","quote":"Custom Quote"},
+  {"category":"Cologne","name":"Cologne","link":"https://sale.dhgate.com/AaKE0x18","image":"https://upload.wikimedia.org/wikipedia/commons/f/fb/Perfume_Bottle.jpg"}
+];
