@@ -1,8 +1,31 @@
-// Smooth scroll for navigation links
-document.querySelectorAll("nav a").forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    target.scrollIntoView({ behavior: "smooth" });
-  });
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JNTResellers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ JNTResellers</h1>
+</header>
+
+<main id="product-container">
+<!-- Products loaded dynamically from JSON -->
+</main>
+
+<section id="order-form">
+<h2>Order Request</h2>
+<form id="orderForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="orderDetails" placeholder="Selected Products will appear here" rows="6" readonly></textarea>
+  <button type="submit">Submit Order / Pay with Cash App</button>
+</form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
