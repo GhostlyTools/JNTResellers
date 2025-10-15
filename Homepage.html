@@ -57,25 +57,25 @@ footer { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000;
     <div class="checkbox"><label><input type="checkbox" name="products" value="G Shock"> Add to Order</label></div>
   </div>
   <div class="product">
-    <img src="https://luxurywatchesusa.com/wp-content/uploads/2023/04/iced-out-richard-mille.jpg" alt="Iced Out Richard Mille">
+    <img src="https://via.placeholder.com/220x160.png?text=Iced+Out+Richard+Mille" alt="Iced Out Richard Mille">
     <h3>Iced Out RICHARD MILLE</h3>
     <div class="price">$12,000</div>
     <div class="checkbox"><label><input type="checkbox" name="products" value="Iced Out RICHARD MILLE"> Add to Order</label></div>
   </div>
   <div class="product">
-    <img src="https://luxurywatchesusa.com/wp-content/uploads/2023/04/richard-mille.jpg" alt="RICHARD MILLE">
+    <img src="https://via.placeholder.com/220x160.png?text=Richard+Mille" alt="RICHARD MILLE">
     <h3>RICHARD MILLE</h3>
     <div class="price">$10,000</div>
     <div class="checkbox"><label><input type="checkbox" name="products" value="RICHARD MILLE"> Add to Order</label></div>
   </div>
   <div class="product">
-    <img src="https://luxurywatchesusa.com/wp-content/uploads/2023/04/rolex-submariner-hulk.jpg" alt="Rolex Submariner Hulk">
+    <img src="https://via.placeholder.com/220x160.png?text=Rolex+Submariner+Hulk" alt="Rolex Submariner Hulk">
     <h3>Rolex Submariner Hulk</h3>
     <div class="price">$12,500</div>
     <div class="checkbox"><label><input type="checkbox" name="products" value="Rolex Submariner Hulk"> Add to Order</label></div>
   </div>
   <div class="product">
-    <img src="https://luxurywatchesusa.com/wp-content/uploads/2023/04/rolex-datejust-41.jpg" alt="Rolex Datejust 41">
+    <img src="https://via.placeholder.com/220x160.png?text=Rolex+Datejust+41" alt="Rolex Datejust 41">
     <h3>Rolex Datejust 41</h3>
     <div class="price">$8,500</div>
     <div class="checkbox"><label><input type="checkbox" name="products" value="Rolex Datejust 41"> Add to Order</label></div>
@@ -132,76 +132,3 @@ footer { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000;
   <div class="product">
     <img src="https://via.placeholder.com/220x160.png?text=AirPods+Pro+Max" alt="AirPods Pro Max">
     <h3>AirPods Pro Max</h3>
-    <div class="price">$549</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="AirPods Pro Max"> Add to Order</label></div>
-  </div>
-  <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Beats+Studio+Pro" alt="Beats Studio Pro">
-    <h3>Beats Studio Pro</h3>
-    <div class="price">$349</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Beats Studio Pro"> Add to Order</label></div>
-  </div>
-</div>
-
-<!-- SHOES -->
-<section id="shoes" class="product-section">
-<h2>Shoes</h2>
-<div class="product-grid">
-  <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Nike" alt="Nike">
-    <h3>Nike</h3>
-    <div class="price">$120</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Nike"> Add to Order</label></div>
-  </div>
-</div>
-</section>
-
-<!-- COLOGNE -->
-<section id="cologne" class="product-section">
-<h2>Cologne</h2>
-<div class="product-grid">
-  <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Cologne" alt="Cologne">
-    <h3>Cologne</h3>
-    <div class="price">$70</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Cologne"> Add to Order</label></div>
-  </div>
-</div>
-</section>
-
-<!-- ORDER FORM -->
-<section id="order-form">
-<h2>Order Request</h2>
-<form action="mailto:jnrrellercheckout@gmail.com" method="post" enctype="text/plain">
-<label>Name:</label>
-<input type="text" name="name" required>
-<label>Email:</label>
-<input type="email" name="email" required>
-<label>Selected Products:</label>
-<textarea name="selectedProducts" id="selectedProducts" rows="4" readonly></textarea>
-<button type="submit">Submit Order</button>
-</form>
-</section>
-
-<footer>
-<p>© 2025 JNTResellers</p>
-</footer>
-
-<script>
-// Collect selected products and display in textarea
-const checkboxes = document.querySelectorAll('input[type=checkbox][name=products]');
-const textarea = document.getElementById('selectedProducts');
-
-checkboxes.forEach(box => {
-  box.addEventListener('change', () => {
-    const selected = Array.from(checkboxes)
-                         .filter(c => c.checked)
-                         .map(c => c.value)
-                         .join(', ');
-    textarea.value = selected;
-  });
-});
-</script>
-
-</body>
-</html>
