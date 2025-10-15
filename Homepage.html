@@ -9,9 +9,9 @@ body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; }
 header { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000; padding:15px 20px; text-align:center; }
 header nav a { margin:0 10px; text-decoration:none; font-weight:bold; color:#000; }
 header nav a:hover { text-decoration: underline; }
-.hero { background:#00ff00; color:#000; text-align:center; padding:36px 12px; }
+.hero { background:#00ff00; color:#000; text-align:center; padding:24px 12px; font-size:18px; }
 .product-section { padding:32px 16px; }
-.product-section h2 { margin-bottom:18px; color:#000; }
+.product-section h2 { margin-bottom:18px; color:#000; text-align:center; }
 .product-grid { display:flex; flex-wrap:wrap; gap:18px; justify-content:center; }
 .product { background:#fff; border:1px solid #ddd; border-radius:8px; padding:12px; text-align:center; width:220px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
 .product img { width:100%; border-radius:6px; margin-bottom:10px; height:160px; object-fit:cover; background:#eee; }
@@ -42,8 +42,7 @@ footer { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000;
 </header>
 
 <section class="hero">
-<h2>Buy & Resell Premium Goods Instantly</h2>
-<p>Watches • Phones • Tablets • Headphones • Shoes • Cologne</p>
+<p>Buy & Resell Premium Goods Instantly — Watches, Phones, Tablets, Headphones, Shoes, Cologne</p>
 </section>
 
 <!-- WATCHES -->
@@ -51,34 +50,48 @@ footer { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000;
 <h2>Watches</h2>
 <div class="product-grid">
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=G+Shock" alt="G Shock">
-    <h3>G Shock</h3>
+    <a href="https://m.dhgate.com/product/new-fashion-mens-watches-g-analog-digital/598642391.html" target="_blank">
+      <img src="https://cdn2.jomashop.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/c/a/casio_g-shock_gb-6900bap-1.jpg" alt="G Shock WR20BAR">
+    </a>
+    <h3>G Shock WR20BAR</h3>
     <div class="price">$150</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="G Shock"> Add to Order</label></div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="G Shock WR20BAR"> Add to Order</label>
   </div>
+
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Iced+Out+Richard+Mille" alt="Iced Out Richard Mille">
-    <h3>Iced Out RICHARD MILLE</h3>
-    <div class="price">$12,000</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Iced Out RICHARD MILLE"> Add to Order</label></div>
-  </div>
-  <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Richard+Mille" alt="RICHARD MILLE">
-    <h3>RICHARD MILLE</h3>
+    <a href="https://sale.dhgate.com/L3uPfI80" target="_blank">
+      <img src="https://cdn.shopify.com/s/files/1/0265/8674/0499/products/richardmille_rm011_white_800x.jpg" alt="Richard Mille">
+    </a>
+    <h3>Richard Mille</h3>
     <div class="price">$10,000</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="RICHARD MILLE"> Add to Order</label></div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="Richard Mille"> Add to Order</label>
   </div>
+
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Rolex+Submariner+Hulk" alt="Rolex Submariner Hulk">
+    <a href="https://sale.dhgate.com/JDMIty52" target="_blank">
+      <img src="https://cdn.shopify.com/s/files/1/0265/8674/0499/products/richard_mille_iced_800x.jpg" alt="Iced Out Richard Mille">
+    </a>
+    <h3>Iced Out Richard Mille</h3>
+    <div class="price">$12,000</div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="Iced Out Richard Mille"> Add to Order</label>
+  </div>
+
+  <div class="product">
+    <a href="https://m.dhgate.com/product/watch-men-s-watch-mechanical-ceramic-watch/972471996.html" target="_blank">
+      <img src="https://cdn3.jomashop.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/r/o/rolex_submariner_hulk_116610lv_800x.jpg" alt="Rolex Submariner Hulk">
+    </a>
     <h3>Rolex Submariner Hulk</h3>
     <div class="price">$12,500</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Rolex Submariner Hulk"> Add to Order</label></div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="Rolex Submariner Hulk"> Add to Order</label>
   </div>
+
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Rolex+Datejust+41" alt="Rolex Datejust 41">
+    <a href="https://sale.dhgate.com/9HPVMD11" target="_blank">
+      <img src="https://cdn.shopify.com/s/files/1/0265/8674/0499/products/rolex_datejust41_800x.jpg" alt="Rolex Datejust 41">
+    </a>
     <h3>Rolex Datejust 41</h3>
     <div class="price">$8,500</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Rolex Datejust 41"> Add to Order</label></div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="Rolex Datejust 41"> Add to Order</label>
   </div>
 </div>
 </section>
@@ -88,47 +101,37 @@ footer { background: linear-gradient(90deg,#ff0000,#ffff00,#00ff00); color:#000;
 <h2>Phones</h2>
 <div class="product-grid">
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=iPhone+16+Pro+Max" alt="iPhone 16 Pro Max">
+    <a href="https://m.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/1047860153.html" target="_blank">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone16promax-select-2025?wid=470&hei=556&fmt=png-alpha&.v=1676583456" alt="iPhone 16 Pro Max">
+    </a>
     <h3>iPhone 16 Pro Max</h3>
     <div class="price">$1,499</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="iPhone 16 Pro Max"> Add to Order</label></div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="iPhone 16 Pro Max"> Add to Order</label>
   </div>
+
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Galaxy+S25+Ultra" alt="Galaxy S25 Ultra">
+    <a href="https://m.dhgate.com/product/6-8-inchs-5g-s23-ultra-cell-phones-unlock/888186188.html" target="_blank">
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/levant/sm-s918ezgomea/gallery/levant-galaxy-s25-ultra-5g-s918-460561-sm-s918ezgomea-532772298" alt="Galaxy S25 Ultra">
+    </a>
     <h3>Galaxy S25 Ultra</h3>
     <div class="price">$1,300</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Galaxy S25 Ultra"> Add to Order</label></div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="Galaxy S25 Ultra"> Add to Order</label>
   </div>
 </div>
+</section>
 
 <!-- TABLETS -->
 <section id="tablets" class="product-section">
 <h2>Tablets</h2>
 <div class="product-grid">
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Apple+iPad+Pro+M4" alt="Apple iPad Pro M4">
+    <a href="https://sale.dhgate.com/gqfDan35" target="_blank">
+      <img src="https://www.apple.com/v/ipad-pro/b/images/overview/hero/hero_ipad_pro_12_9__f6g3g5y4q5uq_large.jpg" alt="Apple iPad Pro M4">
+    </a>
     <h3>Apple iPad Pro M4</h3>
     <div class="price">$1,299</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Apple iPad Pro M4"> Add to Order</label></div>
+    <label class="checkbox"><input type="checkbox" class="product-checkbox" value="Apple iPad Pro M4"> Add to Order</label>
   </div>
-  <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Samsung+Galaxy+Tab+S10+S9" alt="Samsung Galaxy Tab S10+ & S9">
-    <h3>Samsung Galaxy Tab S10+ & S9</h3>
-    <div class="price">$1,099</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Samsung Galaxy Tab S10+ & S9"> Add to Order</label></div>
-  </div>
-</div>
 
-<!-- HEADPHONES -->
-<section id="headphones" class="product-section">
-<h2>Headphones</h2>
-<div class="product-grid">
   <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=Sony+WH-1000XM5" alt="Sony WH-1000XM5">
-    <h3>Sony WH-1000XM5</h3>
-    <div class="price">$399</div>
-    <div class="checkbox"><label><input type="checkbox" name="products" value="Sony WH-1000XM5"> Add to Order</label></div>
-  </div>
-  <div class="product">
-    <img src="https://via.placeholder.com/220x160.png?text=AirPods+Pro+Max" alt="AirPods Pro Max">
-    <h3>AirPods Pro Max</h3>
+    <a href="https://m.dhgate.com/product/s10-s9-tablet-pc-ultra-tablet-lightweight/104786015
